@@ -1,31 +1,51 @@
-//O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
 let listaAmigos = [];
-
 
 function adicionarAmigo(){
     let nome = document.getElementById('amigo').value.trim();
-     if (nome === "") {
-        alert("Por favor, insira um nome válido.");
+     if (nome === '') {
+        document.getElementById('erro').innerText = 'Por favor, insira um nome válido.';
         return;
     }
     if (listaAmigos.includes(nome)) {
-        alert("Esse nome já foi adicionado!");
+        document.getElementById('erro').innerText= 'Esse nome já foi adicionado.';
         return;
     }
 
     listaAmigos.push(nome);
-    console.log(listaAmigos);
-   
-    const li = document.createElement("li");
+    const li = document.createElement('li');
     li.textContent = nome;
-    document.getElementById("listaAmigos").appendChild(li);
-
-    document.getElementById('amigo').value = "";
+    document.getElementById('listaAmigos').appendChild(li);
+    document.getElementById('amigo').value = '';
+    habilitarReset();
 }
 
-function getAmigoSecreto(){
+function sortearAmigo(){
 
+     if (listaAmigos.length === 0) {
+        document.getElementById('erro').innerText= 'Para sortear é necessário adicionar pelo menos 1 nome.';
+    }
+    else {
+        const index = Math.floor(Math.random() * listaAmigos.length);
+        const sorteado = listaAmigos.splice(index, 1)[0];
+        document.getElementById('resultado').innerText = `Seu amigo secreto é: ${sorteado}`;
+        const ul = document.getElementById('listaAmigos');
+        ul.removeChild(ul.children[index]);
+    }
 }
-function sortearAmigo() {
-    let amigoSecreto = getRandomName(listaAmigos);
+
+function limparLista() {
+    listaAmigos = [];
+    ['listaAmigos', 'resultado', 'erro'].forEach(id => {
+        document.getElementById(id).innerHTML = "";
+    });
+    habilitarReset();
+}
+
+function habilitarReset() {
+    if (listaAmigos.length == 0) {
+        document.getElementById('reset').setAttribute('disabled',true);
+    }
+    else{
+        document.getElementById('reset').removeAttribute('disabled');
+    }
 }

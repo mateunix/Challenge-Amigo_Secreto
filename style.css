@@ -88,6 +88,8 @@ body {
 }
 
 .button-container {
+    display: flex;
+    gap: 10px;
     width: 300px;
     justify-content: center;
 }
@@ -142,6 +144,14 @@ ul {
     text-align: center;
 }
 
+.warning {
+    margin-top: 15px;
+    color: #df0505;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
 /* Botão de sortear título */
 .button-draw {
     display: flex;
@@ -149,7 +159,7 @@ ul {
     width: 100%;
     padding: 10px 40px;
     color: var(--color-white);
-    background-color: var(--color-button);
+    background-color: #0da8bd;
     font-size: 16px;
 }
 
@@ -158,5 +168,32 @@ ul {
 }
 
 .button-draw:hover {
-    background-color: var(--color-button-hover);
+    background-color: #0fcbe3;
+}
+.button-reset {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: #0da8bd;
+    font-size: 16px;
+}
+
+.button-reset img {
+    margin-right: 40px;
+}
+
+.button-reset:hover {
+    background-color: #0fcbe3;
+}
+
+.button-reset:disabled {
+    background-color: #b5b5b5;
+    color: var(--color-text);
+}
+
+.button-reset:hover:disabled {
+    background-color: #b5b5b5;
+    color: var(--color-text);
 }

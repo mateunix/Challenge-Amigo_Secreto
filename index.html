@@ -19,6 +19,7 @@
         
         <section class="input-section">
             <h2 class="section-title">Digite o nome dos seus amigos</h2>
+            <p id="erro" class = "warning"></p>
             <div class="input-wrapper">
                 <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
                 <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
@@ -29,8 +30,12 @@
 
             <div class="button-container">
                 <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
-                    <img src="assets/play_circle_outline.png" alt="Ícone para sortear">
+                    <img src="assets/play.png" alt="Ícone para sortear">
                     Sortear amigo
+                </button>
+                    <button id="reset" class="button-reset" onclick="limparLista()" aria-label="Reset" disabled>
+                    <img src="assets/reset.png" alt="Ícone para limpar lista">
+                    Reset
                 </button>
             </div>
         </section>
