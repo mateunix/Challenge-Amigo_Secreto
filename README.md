@@ -1,16 +1,14 @@
-# Challenge - Secret Friend 🕵️‍♂️
+# Challenge - Amigo Secreto 🕵️‍♂️
 
-In this challenge, an application was developed using **JavaScript** that allows users to enter friends' names into a list and then perform a random draw to determine who the "secret friend" is.
+Neste desafio, uma aplicação foi desenvolvida usando **JavaScript** que permite aos usuários inserir nomes de amigos em uma lista e, em seguida, realizar um sorteio aleatório para determinar quem é o "amigo secreto".
 
-The user adds names through a text field and an "Add" button.
+O usuário adiciona nomes por meio de um campo de texto e um botão "Adicionar".
 
-The entered names are displayed in a visible list on the page, and when ready, a "Draw Friend" button selects one of the names at random and displays the result on the screen.
+Os nomes inseridos são exibidos em uma lista visível na página e, quando estiver pronto, um botão "Sortear Amigo" seleciona aleatoriamente um dos nomes e exibe o resultado na tela.
 
-## **Features:**
+## **Funcionalidades:**
 
-- ✍️ **Add names:** Users will type a friend's name into a text field and add it to a visible list by clicking "Add".
-- 🛂 **Input validation:** If the text field is empty, the program will show an alert requesting a valid name.
-- 📋 **View the list:** The entered names will appear in a list below the input field.
-- 🎲 **Random draw:** By clicking the "Draw Friend" button, one name from the list will be randomly selected and displayed on the page.
-
-
+- ✍️ **Adicionar nomes:** Os usuários digitarão o nome de um amigo em um campo de texto e o adicionarão a uma lista visível clicando em "Adicionar".
+- 🛂 **Validação de entrada:** Se o campo de texto estiver vazio, o programa exibirá um alerta solicitando um nome válido.
+- 📋 **Visualizar a lista:** Os nomes inseridos aparecerão em uma lista abaixo do campo de entrada.
+- 🎲 **Sorteio aleatório:** Ao clicar no botão "Sortear Amigo", um nome da lista será selecionado aleatoriamente e exibido na página.
