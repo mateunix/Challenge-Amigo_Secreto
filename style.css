@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
+    --color-primary: #1d2021;
+    --color-secondary:#504945;
     --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
+    --color-button: #d3869b;
+    --color-button-hover: #b16286;
     --color-text: #444444;
-    --color-white: #FFFFFF;
+    --color-white: #ebdbb2;
+    --color-positive: #8ec07c;
+    --color-negative: #fb4934;
+    --font-family: "Press Start 2P", sans-serif;
 }
 
 /* Estilos gerais */
@@ -37,7 +41,12 @@ body {
     justify-content: center;
     align-items: center;
     padding: 40px 0 0;
+    gap: 2%;
 }
+.img-banner{
+    width: 10%;
+}
+
 
 /* Seção de entrada */
 .input-section {
@@ -55,17 +64,17 @@ body {
 /* Títulos */
 .main-title {
     font-size: 48px;
-    font-family: "Merriweather", serif;
+    font-family: var(--font-family);
     font-weight: 900;
     font-style: italic;
     color: var(--color-white);
 }
 
 .section-title {
-    font-family: "Inter", serif;
-    font-size: 36px;
+    font-family: var(--font-family);
+    font-size: 2rem;
     font-weight: 700;
-    color: var(--color-primary);
+    color: var(--color-white);
     margin: 10px 0;
     text-align: center;
 }
@@ -84,7 +93,7 @@ body {
     padding: 10px;
     border: 2px solid #000;
     border-radius: 25px 0 0 25px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .button-container {
@@ -98,19 +107,19 @@ body {
 .input-title {
     flex: 1;
     padding: 10px 15px;
-    font-size: 16px;
+    font-size: 1rem;
     border: 2px solid #333;
     border-right: none;
     border-radius: 25px 0 0 25px;
-    font-family: "Merriweather", serif;
+    font-family: var(--font-family);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilos de botão */
 button {
     padding: 15px 30px;
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
+    font-family: var(--font-family);
+    font-size: 1rem;
     border: 2px solid #000;
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -130,26 +139,28 @@ button {
 /* Listas */
 ul {
     list-style-type: none;
-    color: var(--color-text);
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
+    color: var(--color-white);
+    font-family: var(--font-family);
+    font-size: 1.2rem;
     margin: 20px 0;
 }
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
-    font-size: 22px;
+    color: var(--color-positive);
+    font-size: 1rem;
+    font-family: var(--font-family);
     font-weight: bold;
     text-align: center;
 }
 
 .warning {
     margin-top: 15px;
-    color: #df0505;
-    font-size: 22px;
+    color: var(--color-negative);
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
+    font-family: var(--font-family);
 }
 
 /* Botão de sortear título */
@@ -159,7 +170,7 @@ ul {
     width: 100%;
     padding: 10px 40px;
     color: var(--color-white);
-    background-color: #0da8bd;
+    background-color: var(--color-button);
     font-size: 16px;
 }
 
@@ -168,7 +179,7 @@ ul {
 }
 
 .button-draw:hover {
-    background-color: #0fcbe3;
+    background-color: var(--color-button-hover);
 }
 .button-reset {
     display: flex;
@@ -176,7 +187,7 @@ ul {
     width: 100%;
     padding: 10px 40px;
     color: var(--color-white);
-    background-color: #0da8bd;
+    background-color: var(--color-button);
     font-size: 16px;
 }
 
@@ -185,7 +196,7 @@ ul {
 }
 
 .button-reset:hover {
-    background-color: #0fcbe3;
+    background-color: var(--color-button-hover);
 }
 
 .button-reset:disabled {
