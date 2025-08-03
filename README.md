@@ -13,5 +13,6 @@ Os nomes inseridos são exibidos em uma lista visível na página e, quando esti
 - 📋 **Visualizar a lista:** Os nomes inseridos aparecerão em uma lista abaixo do campo de entrada.
 - 🎲 **Sorteio aleatório:** Ao clicar no botão "Sortear Amigo", um nome da lista será selecionado aleatoriamente e exibido na página.
 
-![project](https://github.com/user-attachments/assets/525f34af-64b1-418a-af30-2b0af7c3647f)
+![cutproject](https://github.com/user-attachments/assets/7efc9413-7d66-4f52-b29b-3e7cb39dad56)
+
 
