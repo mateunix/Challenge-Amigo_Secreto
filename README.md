@@ -13,6 +13,9 @@ Os nomes inseridos são exibidos em uma lista visível na página e, quando esti
 - 📋 **Visualizar a lista:** Os nomes inseridos aparecerão em uma lista abaixo do campo de entrada.
 - 🎲 **Sorteio aleatório:** Ao clicar no botão "Sortear Amigo", um nome da lista será selecionado aleatoriamente e exibido na página.
 
+  ##Teste agora mesmo em:
+  [Amigo Secreto Teste](https://challenge-amigo-secreto-two-plum.vercel.app/)
+
 ![cutproject](https://github.com/user-attachments/assets/7efc9413-7d66-4f52-b29b-3e7cb39dad56)
 
 
